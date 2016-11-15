@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: reservationclient
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: CONFIGSERVER
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8765/eureka
